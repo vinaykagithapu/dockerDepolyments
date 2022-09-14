@@ -35,6 +35,18 @@ sudo mv ./kind /usr/local/bin/kind
 kind create cluster
 ```
 
+## Create Multi Node Kubernetes Cluster
+1. We can change [kind-config.yaml](multiNodeCluster/kind-config.yaml) based on requirements
+```shell
+kind create cluster --name multi-node-cluster --config multiNodeCluster/kind-config.yaml
+```
+
+## Create Multiple Control-plane Nodes Cluster
+1. We can change [kind-config.yaml](multiControlPlaneCluster/kind-config.yaml) based on requirements. 
+```shell
+kind create cluster --name multi-controlplane-cluster --config multiControlPlaneCluster/kind-config.yaml
+```
+
 ## Verify
 1. Get cluster
 ```shell
@@ -49,4 +61,12 @@ kubectl get nodes
 1. Destroy a simple kubernetes cluster
 ```shell
 kind delete cluster
+```
+2. Destroy multi node cluster.
+```shell
+kind delete cluster --name multi-node-cluster
+```
+3. Destroy multi control plane cluster.
+```shell
+kind delete cluster --name multi-controlplane-cluster
 ```
