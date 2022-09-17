@@ -34,7 +34,11 @@ docker logs -f gitlab-app
 sudo docker exec -it gitlab-app grep 'Password:' /etc/gitlab/initial_root_password
 ```
 5. Visit the GitLab URL: http://localhost , and log in with username **root** and the password
-
+6. Change the root password
+```console
+Menu > Admin > Latest users > Administrator > Edit > Password > Password confirmation > Save changes
+```
+7. Login with new password
 
 ## Usage
 1. Start the gitlab container and wait for 2-3mins
