@@ -19,6 +19,7 @@ docker run --name cloudera-quickstart-app \
            --privileged=true -t -i \
            -p 8888:8888 -p 7180:7180 -p 4040:4040 \
            cloudera/quickstart:latest /usr/bin/docker-quickstart
+docker run --hostname=quickstart.cloudera --privileged=true -p 7180:7180 -p 4040:4040 -p 8888:88888 -t -i cloudera/quickstart /usr/bin/docker-quickstart
 ```
 3. Wait for 2-3mins for initialization.
 4. Open cloudera manager http://localhost:7180
