@@ -18,11 +18,11 @@ docker run --name nifi-app -p 8443:8443 -d apache/nifi:latest
 ```
 3. Wait for 2-3mins for initialization.
 4. Open nifi homepage https://localhost:8443/nifi/
-4. Get nifi generated username(copy1) and password(copy2).
+5. Get nifi generated username(copy1) and password(copy2).
 ```shell
 docker logs nifi-app | grep Generated
 ```
-5. Login with: **User:** (paste1) > **Password:** (paste2) > **LOG IN**
+6. Login with: **User:** (paste1) > **Password:** (paste2) > **LOG IN**
 
 ## Usage
 1. Start the nifi-app container and wait for 2-3mins
@@ -34,7 +34,7 @@ docker start nifi-app
 ```shell
 docker exec -it --user root nifi-app bash
 ```
-3. Stop the nifi-app container
+4. Stop the nifi-app container
 ```shell
 docker stop nifi-app
 ``` 
