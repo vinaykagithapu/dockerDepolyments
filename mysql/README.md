@@ -49,5 +49,5 @@ docker stop mysql-app
 ```shell
 docker stop mysql-app
 docker rm mysql-app
-docker rmi apache/mysql:latest
+docker rmi mysql:latest
 ```
