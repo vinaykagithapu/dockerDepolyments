@@ -30,6 +30,10 @@ docker logs nifi-app | grep Generated
 docker start nifi-app
 ```
 2. Visit the nifi URL: https://localhost:8443/nifi/, and log in with username and password
+3. If you want to edit the configuration of nifi, exec into nifi container
+```shell
+docker exec -it --user root nifi-app bash
+```
 3. Stop the nifi-app container
 ```shell
 docker stop nifi-app
