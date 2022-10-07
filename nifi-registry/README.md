@@ -17,14 +17,14 @@ docker pull apache/nifi-registry:latest
 docker run --name nifi-registry-app -p 18080:18080 -d apache/nifi-registry:latest
 ```
 3. Wait for 2-3mins for initialization.
-4. Open nifi-registry homepage https://localhost:18080/nifi-registry/
+4. Open nifi-registry homepage http://localhost:18080/nifi-registry/
 
 ## Usage
 1. Start the nifi-registry-app container and wait for 2-3mins
 ```shell
 docker start nifi-registry-app
 ```
-2. Visit the nifi-registry URL: https://localhost:18080/nifi-registry/
+2. Visit the nifi-registry URL: http://localhost:18080/nifi-registry/
 3. If you want to edit the configuration of nifi-registry, exec into nifi-registry container
 ```shell
 docker exec -it --user root nifi-registry-app bash
