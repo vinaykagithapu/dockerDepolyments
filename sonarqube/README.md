@@ -40,6 +40,11 @@ docker exec -it --user root sonarqube-app bash
 docker stop sonarqube-app
 ``` 
 
+## Post Usage
+1. Change the properties in [sonar-project.properties](sonar-project.properties) and place it in your project directory.
+2. Run the sonar-scanner within the project directory.
+> **_NOTE:_**  [Click here](https://github.com/vinaykagithapu/Linux/tree/main/devops-tools/sonarqube#setup) install sonar-scanner within linux. (Run only Setup.sh)
+
 # CleanUp
 ```shell
 docker stop sonarqube-app
